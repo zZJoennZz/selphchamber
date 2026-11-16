@@ -1,0 +1,18 @@
+/* Generic static pages — sidebar layout, breadcrumbs */
+@import "./tokens.css";
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer components {
+  .page-with-sidebar {
+    @apply mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-12 lg:grid-cols-3;
+  }
+  .page-main {
+    @apply lg:col-span-2;
+  }
+  .breadcrumbs {
+    @apply mb-4 text-sm text-ink/70;
+  }
+  .breadcrumbs a {
+    @apply underline decoration-selph-blue underline-offset-2 hover:text-deep-blue;
+  }
+}

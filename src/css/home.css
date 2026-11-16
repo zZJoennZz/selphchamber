@@ -1,0 +1,18 @@
+/* HOME (front-page) — hero, membership pitch, event highlights, sponsor strip */
+@import "./tokens.css";
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer components {
+  .hero {
+    @apply bg-gradient-to-br from-deep-blue to-selph-blue text-white;
+  }
+  .hero-inner {
+    @apply mx-auto max-w-6xl px-6 py-20 text-center;
+  }
+  .sponsor-strip {
+    @apply bg-mint/40 py-8;
+  }
+  .member-stats {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-3;
+  }
+}

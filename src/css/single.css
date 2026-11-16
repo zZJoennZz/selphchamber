@@ -1,0 +1,15 @@
+/* Single post / single document — reading width, meta, document download box */
+@import "./tokens.css";
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer components {
+  .prose-selph {
+    @apply max-w-3xl leading-relaxed;
+  }
+  .doc-download {
+    @apply card flex items-center justify-between gap-4;
+  }
+  .doc-download .file-meta {
+    @apply text-sm text-ink/60;
+  }
+}

@@ -1,0 +1,16 @@
+/* Archives, document library, search results — filterable grids */
+@import "./tokens.css";
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer components {
+  .archive-toolbar {
+    @apply mb-8 flex flex-wrap items-center gap-4 rounded-lg bg-cloud p-4;
+  }
+  .archive-grid {
+    @apply grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+  .filter-chip {
+    @apply rounded-full border border-teal px-4 py-1.5 text-sm font-medium
+           text-deep-blue hover:bg-mint aria-pressed:bg-deep-blue aria-pressed:text-white;
+  }
+}
