@@ -1,25 +1,27 @@
 /* ------------------------------------------------------------------
    Design tokens — single source of truth for every CSS entry.
-   Imported by globals.css AND every page-specific file so tokens
-   stay consistent without shipping preflight/base twice.
+   Palette and fonts match the Selph frontpage template:
+   Bricolage Grotesque (display) + Public Sans (body).
+   NOTE: bare names (deep, sky, teal, mint, lime, ink) sit alongside
+   Tailwind's default scales (sky-500, teal-700...) without conflict.
 ------------------------------------------------------------------- */
 @import "tailwindcss/theme.css" layer(theme);
 
 @theme {
   /* Selph brand palette */
-  --color-deep-blue:  #0E7EA6;
-  --color-selph-blue: #27C2F8;
-  --color-teal:       #8BDCE0;
-  --color-mint:       #A1E4DB;
-  --color-lime:       #E9F8CD;
+  --color-deep: #0E7EA6;
+  --color-sky:  #27C2F8;
+  --color-teal: #8BDCE0;
+  --color-mint: #A1E4DB;
+  --color-lime: #E9F8CD;
+  --color-ink:  #0A2B3A;
 
-  --color-ink:        #1F2933;
-  --color-paper:      #FFFFFF;
-  --color-cloud:      #F6F9FA;
+  --color-paper: #FFFFFF;
+  --color-cloud: #F6F9FA;
 
-  --font-sans:        "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
-  --font-serif:       "Merriweather", ui-serif, Georgia, serif;
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-body:    "Public Sans", ui-sans-serif, system-ui, sans-serif;
 
-  /* Accessible focus state used everywhere */
-  --ring-focus:       3px solid #0E7EA6;
+  /* Accessible focus ring */
+  --ring-focus: 3px solid var(--color-ink);
 }

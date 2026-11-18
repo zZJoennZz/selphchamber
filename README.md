@@ -50,3 +50,7 @@ and the utility is generated into the right entry file.
 - Blue #27C2F8 — buttons and links
 - Teal #8BDCE0 / Mint #A1E4DB — section backgrounds
 - Lime #E9F8CD — callouts
+
+The palette can be adjusted under **Appearance → Customize → Global Colors**.
+Changes apply to theme-wide color tokens, including buttons, links, surfaces,
+and text.
